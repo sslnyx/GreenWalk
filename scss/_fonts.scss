@@ -45,3 +45,37 @@
 //   font-weight: normal;
 //   font-style: normal;
 // }
+
+
+@font-face {
+  font-family: 'butlerblack';
+  src: url('../../assets/font/Butler_webfont/butler_bold-webfont.woff2') format('woff2'),
+       url('../../assets/font/Butler_webfont/butler_black-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'butlerbold';
+  src: url('../../assets/font/Butler_webfont/butler_bold-webfont.woff2') format('woff2'),
+       url('../../assets/font/Butler_webfont/butler_bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'butlerextrabold';
+  src: url('../../assets/font/Butler_webfont/butler_extrabold-webfont.woff2') format('woff2'),
+       url('../../assets/font/Butler_webfont/butler_extrabold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
