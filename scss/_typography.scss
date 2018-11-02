@@ -4,13 +4,18 @@ html {
 }
 
 h1 {
-
+  font-size: 2.5rem;
   color: white;
 
   .brown-text {
     color: #BD9B5D;
   }
 
+}
+
+button:active {
+  outline: none;
+  border: none;
 }
 
 // .container h1,

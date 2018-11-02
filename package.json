@@ -23,6 +23,7 @@
     "gulp-uglify": "^3.0.0"
   },
   "dependencies": {
+    "bootstrap": "^3.3.7",
     "gulp-prettyerror": "^1.2.1"
   }
 }

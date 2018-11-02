@@ -10,7 +10,7 @@
   .containor {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 
     .logo-containor {
       position: relative;
@@ -18,19 +18,21 @@
       .logo {
         background-image: url("../../assets/logo_thegreenwalk.svg");
         background-repeat: no-repeat;
-        background-position: right;
+        // background-position: right;
         width: 35vw;
         height: 30%;
       }
 
       button {
         position: absolute;
-        right: 5%;
+        right: 10%;
       }
     }
 
     p {
+      font-family: 'Montserrat', sans-serif;
       width: 35vw;
+      color: #6E6E6E;
       // margin-bottom: 3rem;
       margin-top: 1rem;
       margin-bottom: 5rem;
@@ -46,7 +48,15 @@
   .text-box {
     max-width: 1240px;
     margin: 0 auto;
-    p{
+
+    h1 {
+      margin-bottom: 3rem;
+    }
+
+    p {
+      padding-top: 3rem;
+      font-family: 'Montserrat', sans-serif;
+      color: white;
       line-height: 3rem;
     }
   }
