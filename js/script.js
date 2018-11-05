@@ -1,7 +1,3 @@
-// $(':checkbox').checkboxpicker().on('change', function() {
-//   ...
-// });
-
 jQuery(document).ready(function ($) {
 
 // $('.ml6 .letters').each(function(){
@@ -24,7 +20,15 @@ jQuery(document).ready(function ($) {
 //     easing: "easeOutExpo",
 //     delay: 1000
 //   });
-  
+
+// $('.modal').on('shown.bs.modal', function () {
+//     $(this).find('form').validator('destroy').validator()
+// });
+
+$('#myForm').on('submit', function(e){
+  $('#myModal').modal('show');
+  e.preventDefault();
+});
 
 
 
