@@ -54,7 +54,7 @@
     }
 
     p {
-      padding-top: 3rem;
+      width: 60%;
       font-family: 'Montserrat', sans-serif;
       color: white;
       line-height: 3rem;
@@ -68,9 +68,9 @@
   // height: 100vh;
   // text-align: left;
   text-transform: uppercase;
-  padding: 3rem 0;
 
   .kotext {
+    padding: 3rem 0;
     background-image: url("../../assets/bg_marble.jpg");
     background-size: auto 100vh;
     background-attachment: fixed;
@@ -86,6 +86,130 @@
   }
 }
 
-.form {
-  height: 100vh;
+.lower-section {
+  background-color: #106330;
+  // display: flex;
+
+  .form-containor {
+    // height: 100vh;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 3rem 6rem 3rem 5rem;
+
+    form {
+      // width: 60%;
+      // position: relative;
+
+
+      .form-control {
+        color: white;
+        font-size: 12px;
+
+
+        &::placeholder {
+          color: white;
+        }
+
+        margin: 1rem;
+        background-color: #106330;
+        border-color: #BD9B5D;
+        border-radius: 0%;
+      }
+
+
+      .registerbtn {
+        display: block;
+        margin: 1rem auto;
+
+        // margin: 0;
+        // position: absolute;
+        // top: 75%;
+        // left: 50%;
+        // -ms-transform: translate(-50%, -50%);
+        // transform: translate(-50%, -50%);
+
+      }
+
+
+    }
+
+    .checkbox-container {
+      // min-width: 30%;
+      // padding: 1rem;
+
+      p {
+        color: white;
+        font-size: 12px;
+        // min-width: 40%;
+        margin: 22px 0 0 20px;
+      }
+    }
+
+    .p-container {
+      color: white;
+
+      p {
+        text-align: center;
+        font-size: 10px;
+        padding: 1rem 5rem;
+      }
+    }
+  }
+
+  .cert {
+
+    // width: 40%;
+    // height: 100%;
+    background-image: url("../../assets/bg_marble.jpg");
+    background-size: auto 100vh;
+    background-attachment: fixed;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #6E6E6E;
+
+
+    .thegreenwalk-wrapper {
+      width: 100%;
+
+
+      .logo-thegreenwalk {
+        display: block;
+        margin: 20vh auto;
+        width: 70%;
+        // margin: 0;
+        // position: absolute;
+        // top: 30%;
+        // left: 50%;
+        // transform: translate(-50%, -50%);
+      }
+
+      p {
+        // display: block;
+        text-align: center;
+      }
+    }
+
+    .developer-wrapper {
+      text-align: center;
+      margin: 0 auto;
+      margin-top: 10rem;
+      font-size: 10px;
+
+
+      img {
+        padding: 1rem;
+      }
+
+      .logo-manchi {
+        margin-top: 1rem;
+        margin-left: 1rem;
+        width: 70%;
+      }
+
+      .logo-hype {
+        width: 35%;
+      }
+    }
+  }
+
 }

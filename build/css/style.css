@@ -69,7 +69,8 @@ body {
   background-attachment: fixed;
   background-color: white;
   color: #2d2d2d;
-  margin: 0 auto; }
+  margin: 0 auto;
+  font-family: 'butlerblack', sans-serif; }
 
 .registerbtn {
   background-color: #BD9B5D;
@@ -80,11 +81,116 @@ body {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
   cursor: pointer; }
 
 button:focus {
   outline: none; }
+
+label {
+  color: white; }
+
+.custom-checkbox {
+  border-radius: 0%; }
+
+/* The container */
+.container {
+  margin: 20px 5px;
+  width: 30px;
+  position: relative;
+  padding-left: 25px;
+  padding-top: 3px;
+  cursor: pointer;
+  font-size: 12px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0; }
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #106330;
+  border: #BD9B5D solid 1px; }
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #0c4d25; }
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #106330;
+  border: #BD9B5D solid 1px; }
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none; }
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block; }
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 5px;
+  top: 1px;
+  width: 8px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+.checkbox-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.dropdown-toggle {
+  margin: 1rem;
+  width: 100%;
+  border-radius: 0%;
+  border-color: #BD9B5D;
+  background-color: #106330; }
+  .dropdown-toggle:hover {
+    background-color: #106330;
+    border-color: #BD9B5D; }
+
+.form-group-select select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
+
+.form-group-select select::-ms-expand {
+  display: none; }
+
+.form-group-select::after {
+  content: "";
+  position: absolute;
+  right: 15px;
+  top: 16px;
+  width: 18px;
+  height: 18px;
+  border: solid #BD9B5D;
+  border-width: 0 1px 1px 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg); }
 
 .header {
   max-width: 1240px;
@@ -135,16 +241,16 @@ button:focus {
     .tagline .text-box h1 {
       margin-bottom: 3rem; }
     .tagline .text-box p {
-      padding-top: 3rem;
+      width: 60%;
       font-family: 'Montserrat', sans-serif;
       color: white;
       line-height: 3rem; }
 
 .kotextcontainor {
   background-color: #106330;
-  text-transform: uppercase;
-  padding: 3rem 0; }
+  text-transform: uppercase; }
   .kotextcontainor .kotext {
+    padding: 3rem 0;
     background-image: url("../../assets/bg_marble.jpg");
     background-size: auto 100vh;
     background-attachment: fixed;
@@ -154,8 +260,66 @@ button:focus {
     line-height: 0.7;
     text-align: left; }
 
-.form {
-  height: 100vh; }
+.lower-section {
+  background-color: #106330; }
+  .lower-section .form-containor {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 3rem 6rem 3rem 5rem; }
+    .lower-section .form-containor form .form-control {
+      color: white;
+      font-size: 12px;
+      margin: 1rem;
+      background-color: #106330;
+      border-color: #BD9B5D;
+      border-radius: 0%; }
+      .lower-section .form-containor form .form-control::-webkit-input-placeholder {
+        color: white; }
+      .lower-section .form-containor form .form-control::-ms-input-placeholder {
+        color: white; }
+      .lower-section .form-containor form .form-control::placeholder {
+        color: white; }
+    .lower-section .form-containor form .registerbtn {
+      display: block;
+      margin: 1rem auto; }
+    .lower-section .form-containor .checkbox-container p {
+      color: white;
+      font-size: 12px;
+      margin: 22px 0 0 20px; }
+    .lower-section .form-containor .p-container {
+      color: white; }
+      .lower-section .form-containor .p-container p {
+        text-align: center;
+        font-size: 10px;
+        padding: 1rem 5rem; }
+  .lower-section .cert {
+    background-image: url("../../assets/bg_marble.jpg");
+    background-size: auto 100vh;
+    background-attachment: fixed;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #6E6E6E; }
+    .lower-section .cert .thegreenwalk-wrapper {
+      width: 100%; }
+      .lower-section .cert .thegreenwalk-wrapper .logo-thegreenwalk {
+        display: block;
+        margin: 20vh auto;
+        width: 70%; }
+      .lower-section .cert .thegreenwalk-wrapper p {
+        text-align: center; }
+    .lower-section .cert .developer-wrapper {
+      text-align: center;
+      margin: 0 auto;
+      margin-top: 10rem;
+      font-size: 10px; }
+      .lower-section .cert .developer-wrapper img {
+        padding: 1rem; }
+      .lower-section .cert .developer-wrapper .logo-manchi {
+        margin-top: 1rem;
+        margin-left: 1rem;
+        width: 70%; }
+      .lower-section .cert .developer-wrapper .logo-hype {
+        width: 35%; }
 
 html {
   font-family: 'butlerblack', Arial, sans-serif;

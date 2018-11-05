@@ -6,54 +6,281 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <link rel="stylesheet" type="text/css" href="./build/css/style.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <!-- <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet" /> -->
+
+  <link rel="stylesheet" type="text/css" href="./build/css/style.min.css">
   <title>GreenWalk</title>
 </head>
+
 
 <body>
   <div class="main-content">
 
     <div class="header">
-      <div class="containor">
-      <div class="logo-containor">
-        <div class="logo"></div>
-        <button type="submit" class="registerbtn">Register</button>
-      </div> <!-- logo -->
+      <div class="containor animated fadeIn">
+        <div class="logo-containor ">
+          <div class="logo"></div>
+          <button type="submit" class="registerbtn">Register</button>
+        </div> <!-- logo -->
 
-      <div>
-        <p>Room to grow and create shareable memories.
-          Innovative design details to match your authentic vibe.
-          A thriving neighbourhood setting where adventure awaits.
-        </p>
-        <p>Just when you thought you couldn’t find a home that has it all, your luck has changed.</p>
+        <div>
+          <p>Room to grow and create shareable memories.
+            Innovative design details to match your authentic vibe.
+            A thriving neighbourhood setting where adventure awaits.
+          </p>
+          <p>Just when you thought you couldn’t find a home that has it all, your luck has changed.</p>
+        </div>
       </div>
-    </div>
     </div>
 
     <div class="tagline">
       <div class="text-box">
-      <h1>
-        <span class="white-text">3 & 4 Bedroom</span><br>
-        <span class="brown-text">Family Townhomes</span>
-      </h1>
-      <p>Meet the Greenwalk, a brand-new community of spacious 3 & 4 bedroom townhomes where you can <br>experience family
-        living without boundaries. Outfitted for any modern family and spread out over three<br> levels of bright and open
-        living space, life at the Clover promises to deliver on all fronts.</p>
+        <h1>
+          <span class="white-text">3 & 4 Bedroom</span><br>
+          <span class="brown-text">Family Townhomes</span>
+        </h1>
+        <p>Meet the Greenwalk, a brand-new community of spacious 3 & 4 bedroom townhomes where you can experience
+          family
+          living without boundaries. Outfitted for any modern family and spread out over three levels of bright and
+          open
+          living space, life at the Clover promises to deliver on all fronts.</p>
+      </div>
     </div>
-  </div>
 
     <div class="kotextcontainor">
       <p class="kotext">moddern living without boundary</p>
 
     </div>
 
-    <div class="form">
+    <div class="row lower-section">
+
+      <div class="col-7 form-containor">
+
+        <form>
+          <div class="row">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="First name*">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Address*">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Last Name*">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="City*">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Phone*">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Province*">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Email*">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Postal Code*">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+
+              <div class="checkbox-container">
+                <p>I am a Realtor</p>
+                <div>
+                  <label class="container checkbox-inline">yes
+                    <input type="radio" name="radio">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container checkbox-inline">no
+                    <input type="radio" name="radio">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="form-group-select">
+                <select class="form-control" id="sel1">
+                  <option disabled selected>How did you hear about The Greenwalk?*</option>
+                  <option>Signage / Drive By</option>
+                  <option>Friend / Family</option>
+                  <option>Realtor</option>
+                  <option>MLS</option>
+                  <option>Online</option>
+                  <option>Social Media</option>
+                  <option>Community</option>
+                  <option>Other</option>
+
+
+                </select>
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="row">
+            <div class="col">
+
+              <div class="checkbox-container">
+                <p>I am working with a Realtor</p>
+                <div>
+                  <label class="container checkbox-inline">yes
+                    <input type="radio" name="radio2">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container checkbox-inline">no
+                    <input type="radio" name="radio2">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="form-group-select">
+                <select class="form-control" id="sel1">
+                  <option disabled selected>When are you considering purchasing a home?</option>
+                  <option>0 – 3 months</option>
+                  <option>3 – 6 months</option>
+                  <option>6 – 12 months</option>
+                  <option>>12 months</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Postal Code*">
+            </div>
+
+            <div class="col">
+              <div class="form-group-select">
+                <select class="form-control" id="sel1">
+                  <option disabled selected>Renting</option>
+                  <option>Own home (not selling to buy)</option>
+                  <option>Living with family</option>
+                  <option>Sold</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+
+          <button type="button" class="btn arrow-down registerbtn" data-toggle="modal" data-target="#exampleModalLong">
+            Register
+          </button>
+
+
+
+
+          <div class="p-container">
+            <p>By selecting ‘Register’, you consent to Manchi Group and their associates contacting you with updates
+              about future projects and services that may interest you based on your responses above. You may
+              unsubscribe at any time.
+            </p>
+            <p>
+              You also acknowledge that this communication is not intended to cause or induce breach of an existing
+              agency agreement. This is not an offering for sale. Any such offering may only be made by way of
+              disclosure statement. E.&O.E.
+            </p>
+          </div>
+
+        </form>
+        <!-- <button class="registerbtn">Register</button> -->
+
+        <!-- <h1 class="animated infinite bounce delay-2s">Example</h1> -->
+
+
+      </div>
+
+
+      <div class="col cert">
+        <div class="thegreenwalk-wrapper">
+        <img class="logo-thegreenwalk" src="./assets/logo_thegreenwalk.svg" alt="logo_thegreenwalk">
+          <p>Info@TheGreenWalkhomes.com<br>
+              604.321.1234
+              </p>
+      </div>
+
+        <div class="row developer-wrapper">
+
+          <p class="col">Developed by:</p>
+          <p class="col">Sales & Marketing by:</p>
+          <div class="w-100"></div>
+          <div class="col">
+          <img class="logo-manchi" src="./assets/logo_manchi.svg" alt="log_manchi">
+        </div>
+          <div class="col">
+
+          <img class="logo-hype" src="./assets/logo_hype.svg" alt="logo_hype">
+        </div>
+        </div>
+      </div>
 
     </div>
 
   </div>
-</body>
 
+  <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <script src="assets/js/bootstrap-checkbox.js" defer></script>
+  <script src="./build/js/script.min.js" type="text/javascript"></script>
+
+
+</body>
+<!-- <script>
+$(function() {
+    $('.registerbtn').click(function(){
+        $('#exampleModalLong').show()
+      })
+    })
+</script> -->
 
 </html>
