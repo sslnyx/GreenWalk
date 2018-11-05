@@ -342,13 +342,24 @@ a:hover {
         width: 35%; }
 
 .modal-dialog {
-  width: 80%; }
+  max-width: none;
+  width: 60%; }
   .modal-dialog .modal-body {
     border: none;
     background-color: #106330;
     border-radius: 0%;
     color: white;
-    padding: 10rem 3rem; }
+    padding: 6rem 6rem; }
+    .modal-dialog .modal-body span {
+      position: absolute;
+      top: 30px; }
+    .modal-dialog .modal-body h5 {
+      color: #BD9B5D;
+      font-size: 3rem; }
+    .modal-dialog .modal-body p {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 12px;
+      line-height: 2rem; }
     .modal-dialog .modal-body .close {
       color: white; }
 

@@ -223,14 +223,27 @@
 }
 
 .modal-dialog {
-  width: 80%;
+  max-width:none;
+  width: 60%;
   .modal-body {
     border: none;
     background-color: #106330;
     border-radius: 0%;
     color: white;
-    padding: 10rem 3rem;
-
+    padding: 6rem 6rem;
+    span{
+      position: absolute;
+      top: 30px;
+    }
+    h5{
+      color: #BD9B5D;
+      font-size: 3rem;
+    }
+    p{
+      font-family: 'Montserrat', sans-serif;
+      font-size: 12px;
+      line-height: 2rem;
+    }
     .close {
       color: white;
     }
