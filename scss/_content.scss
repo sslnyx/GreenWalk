@@ -23,9 +23,16 @@
         height: 30%;
       }
 
-      button {
+      a {
+        margin-right: 3rem;
+        margin-top: 3rem;
         position: absolute;
-        right: 10%;
+        right: 0%;
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+        font-weight: 800;
+        font-size: 12px;
+        padding: 1rem 3rem;
       }
     }
 
@@ -42,7 +49,7 @@
 }
 
 .tagline {
-  padding-top: 3rem;
+  padding: 3rem 3rem 0 3rem;
   background-color: #106330;
 
   .text-box {
@@ -58,6 +65,7 @@
       font-family: 'Montserrat', sans-serif;
       color: white;
       line-height: 3rem;
+      padding-bottom: 1rem;
     }
   }
 }
@@ -65,9 +73,9 @@
 
 .kotextcontainor {
   background-color: #106330;
-  // height: 100vh;
-  // text-align: left;
+  padding-top: 3rem;
   text-transform: uppercase;
+
 
   .kotext {
     padding: 3rem 0;
@@ -80,7 +88,7 @@
 
     font-size: 15vw;
     // font-weight: bold;
-    line-height: 0.7;
+    line-height: 0.69;
     text-align: left;
     // vertical-align: bottom;
   }
@@ -116,7 +124,7 @@
         border-radius: 0%;
       }
 
-
+      
       .registerbtn {
         display: block;
         margin: 1rem auto;
@@ -212,4 +220,19 @@
     }
   }
 
+}
+
+.modal-dialog {
+  width: 80%;
+  .modal-body {
+    border: none;
+    background-color: #106330;
+    border-radius: 0%;
+    color: white;
+    padding: 10rem 3rem;
+
+    .close {
+      color: white;
+    }
+  }
 }

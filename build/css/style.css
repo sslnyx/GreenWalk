@@ -75,12 +75,16 @@ body {
 .registerbtn {
   background-color: #BD9B5D;
   border: none;
+  border-radius: 0%;
   color: white;
   padding: 7px 42px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 12px;
   cursor: pointer; }
 
 button:focus {
@@ -192,6 +196,13 @@ label {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg); }
 
+a:link, a:visited, a:hover {
+  text-decoration: none;
+  color: white; }
+
+a:hover {
+  background-color: #a48243; }
+
 .header {
   max-width: 1240px;
   margin: 0 auto;
@@ -221,9 +232,16 @@ label {
         background-repeat: no-repeat;
         width: 35vw;
         height: 30%; }
-      .header .containor .logo-containor button {
+      .header .containor .logo-containor a {
+        margin-right: 3rem;
+        margin-top: 3rem;
         position: absolute;
-        right: 10%; }
+        right: 0%;
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+        font-weight: 800;
+        font-size: 12px;
+        padding: 1rem 3rem; }
     .header .containor p {
       font-family: 'Montserrat', sans-serif;
       width: 35vw;
@@ -233,7 +251,7 @@ label {
       line-height: 2.5; }
 
 .tagline {
-  padding-top: 3rem;
+  padding: 3rem 3rem 0 3rem;
   background-color: #106330; }
   .tagline .text-box {
     max-width: 1240px;
@@ -244,10 +262,12 @@ label {
       width: 60%;
       font-family: 'Montserrat', sans-serif;
       color: white;
-      line-height: 3rem; }
+      line-height: 3rem;
+      padding-bottom: 1rem; }
 
 .kotextcontainor {
   background-color: #106330;
+  padding-top: 3rem;
   text-transform: uppercase; }
   .kotextcontainor .kotext {
     padding: 3rem 0;
@@ -257,7 +277,7 @@ label {
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     font-size: 15vw;
-    line-height: 0.7;
+    line-height: 0.69;
     text-align: left; }
 
 .lower-section {
@@ -320,6 +340,17 @@ label {
         width: 70%; }
       .lower-section .cert .developer-wrapper .logo-hype {
         width: 35%; }
+
+.modal-dialog {
+  width: 80%; }
+  .modal-dialog .modal-body {
+    border: none;
+    background-color: #106330;
+    border-radius: 0%;
+    color: white;
+    padding: 10rem 3rem; }
+    .modal-dialog .modal-body .close {
+      color: white; }
 
 html {
   font-family: 'butlerblack', Arial, sans-serif;
