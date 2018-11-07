@@ -30,6 +30,35 @@ jQuery(document).ready(function ($) {
     e.preventDefault();
   });
 
+  // $(document).ready(function() {
+  //   $('#invite').ketchup().submit(function() {
+  //       if ($(this).ketchup('isValid')) {                                       
+  //           var action = $(this).attr('action');
+  //               $.ajax({
+  //                       url: action,
+  //                       type: 'POST',
+  //                       data: {
+  //                       email: $('#pty_email_contest').val(),
+  //                       fname: $('#pty_fname').val(),
+  //                       lname: $('#pty_lname').val(),                                       
+  //                       city: $('#pty_city').val(),
+  //                       state: $('#pty_state').val(),
+  //                       bday: $('#pty_birthday').val()
+
+  //                   },                                  
+  //                   success: function(data){
+  //                       $('#result').html(data);
+  //                   },
+  //                   error: function() {
+  //                       $('#result').html('Sorry, an error occurred.').css('color', 'red');
+  //                   }
+  //               });
+  //       }
+  //       return false;
+  //   });
+  // });
+
+
   // Select all links with hashes
   $('a[href*="#"]')
   // Remove links that don't actually link to anything

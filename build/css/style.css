@@ -158,14 +158,6 @@ label {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg); }
 
-.checkbox-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
-
 .dropdown-toggle {
   margin: 1rem;
   width: 100%;
@@ -187,7 +179,7 @@ label {
 .form-group-select::after {
   content: "";
   position: absolute;
-  right: 15px;
+  right: 25px;
   top: 16px;
   width: 18px;
   height: 18px;
@@ -206,52 +198,47 @@ a:hover {
 .header {
   max-width: 1240px;
   margin: 0 auto;
-  padding: 3rem;
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  height: 100vh; }
   .header .containor {
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
+    height: 100%;
+    overflow: hidden; }
     .header .containor .logo-containor {
-      position: relative; }
-      .header .containor .logo-containor .logo {
-        background-image: url("../../assets/logo_thegreenwalk.svg");
-        background-repeat: no-repeat;
-        width: 35vw;
-        height: 30%; }
+      height: 50%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+      padding: 3rem; }
+      .header .containor .logo-containor img {
+        width: 100%; }
       .header .containor .logo-containor a {
-        margin-right: 3rem;
-        margin-top: 3rem;
-        position: absolute;
-        right: 0%;
+        margin: 0 auto;
         font-family: 'Montserrat', sans-serif;
         text-transform: uppercase;
         font-weight: 800;
         font-size: 12px;
-        padding: 1rem 3rem; }
-    .header .containor p {
-      font-family: 'Montserrat', sans-serif;
-      width: 35vw;
-      color: #6E6E6E;
-      margin-top: 1rem;
-      margin-bottom: 5rem;
-      line-height: 2.5; }
+        padding: 1rem 3rem;
+        width: 200px;
+        margin-top: 3rem; }
+    .header .containor .pholder {
+      padding: 3rem; }
+      .header .containor .pholder p {
+        font-family: 'Montserrat', sans-serif;
+        color: #6E6E6E;
+        margin-bottom: 2rem;
+        line-height: 2.5;
+        text-align: center; }
 
 .tagline {
-  padding: 3rem 3rem 0 3rem;
+  padding: 3rem;
+  width: 100%;
   background-color: #106330; }
   .tagline .text-box {
     max-width: 1240px;
@@ -259,7 +246,7 @@ a:hover {
     .tagline .text-box h1 {
       margin-bottom: 3rem; }
     .tagline .text-box p {
-      width: 60%;
+      width: 100%;
       font-family: 'Montserrat', sans-serif;
       color: white;
       line-height: 3rem;
@@ -280,16 +267,30 @@ a:hover {
     line-height: 0.69;
     text-align: left; }
 
-.lower-section {
+.lower-bg {
   background-color: #106330; }
+
+.lower-section {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
   .lower-section .form-containor {
-    max-width: 1240px;
     margin: 0 auto;
-    padding: 3rem 6rem 3rem 5rem; }
+    padding: 3rem; }
     .lower-section .form-containor form .form-control {
       color: white;
-      font-size: 12px;
-      margin: 1rem;
+      font-size: 10px;
+      min-width: 231px;
+      margin: 1rem 0;
       background-color: #106330;
       border-color: #BD9B5D;
       border-radius: 0%; }
@@ -302,35 +303,63 @@ a:hover {
     .lower-section .form-containor form .registerbtn {
       display: block;
       margin: 1rem auto; }
-    .lower-section .form-containor .checkbox-container p {
-      color: white;
-      font-size: 12px;
-      margin: 22px 0 0 20px; }
+    .lower-section .form-containor .checkbox-container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      min-width: 231px; }
+      .lower-section .form-containor .checkbox-container p {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        color: white;
+        font-size: 10px; }
     .lower-section .form-containor .p-container {
+      display: block;
       color: white; }
       .lower-section .form-containor .p-container p {
         text-align: center;
         font-size: 10px;
-        padding: 1rem 5rem; }
+        padding: 1rem 0; }
   .lower-section .cert {
+    width: 100%;
     background-image: url("../../assets/bg_marble.jpg");
     background-size: auto 100vh;
     background-attachment: fixed;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     color: #6E6E6E; }
+    .lower-section .cert .cert-container {
+      height: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
     .lower-section .cert .thegreenwalk-wrapper {
+      margin-top: 40%;
       width: 100%; }
       .lower-section .cert .thegreenwalk-wrapper .logo-thegreenwalk {
         display: block;
-        margin: 20vh auto;
+        margin: 0 auto;
         width: 70%; }
       .lower-section .cert .thegreenwalk-wrapper p {
+        margin: 20% 0;
         text-align: center; }
     .lower-section .cert .developer-wrapper {
       text-align: center;
-      margin: 0 auto;
-      margin-top: 10rem;
+      margin: 10% auto;
       font-size: 10px; }
       .lower-section .cert .developer-wrapper img {
         padding: 1rem; }
@@ -362,6 +391,54 @@ a:hover {
       line-height: 2rem; }
     .modal-dialog .modal-body .close {
       color: white; }
+
+@media screen and (min-width: 600px) {
+  .header .containor {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .header .containor .logo-containor {
+      width: 50%;
+      height: 100%;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: end;
+          -ms-flex-align: end;
+              align-items: flex-end; }
+      .header .containor .logo-containor .logo-thegreenwalk {
+        margin-bottom: 3rem; }
+      .header .containor .logo-containor a {
+        margin: 0; }
+    .header .containor .pholder {
+      width: 50%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin-top: 7rem; }
+      .header .containor .pholder p {
+        text-align: left; }
+  .lower-section .p-container {
+    padding: 1rem 10rem; } }
+
+@media screen and (min-width: 1000px) {
+  .lower-section {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap; }
+    .lower-section .p-container {
+      padding: 1rem 3rem; }
+    .lower-section .cert {
+      width: 70%; } }
 
 html {
   font-family: 'butlerblack', Arial, sans-serif;
