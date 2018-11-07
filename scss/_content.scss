@@ -88,6 +88,21 @@
   padding-top: 3rem;
   text-transform: uppercase;
 
+  // .kotext:before {
+  //   content: "";
+  //   display: block;
+  //   position: fixed;
+  //   left: 0;
+  //   top: 0;
+  //   width: 100%;
+  //   height: 100%;
+  //   z-index: -10;
+  //   background-image: url("../../assets/bg_marble.jpg");
+  //   -webkit-background-size: cover;
+  //   -moz-background-size: cover;
+  //   -o-background-size: cover;
+  //   background-size: cover;
+  // }
 
   .kotext {
     padding: 3rem 0;
@@ -104,6 +119,8 @@
     text-align: left;
     // vertical-align: bottom;
   }
+
+
 }
 
 .lower-bg {
