@@ -84,40 +84,33 @@
 
 
 .kotextcontainor {
-  background-color: #106330;
-  padding-top: 3rem;
+  // padding-top: 3rem;
   text-transform: uppercase;
+  background-color: #106330;
 
-  // .kotext:before {
-  //   content: "";
-  //   display: block;
-  //   position: fixed;
-  //   left: 0;
-  //   top: 0;
-  //   width: 100%;
-  //   height: 100%;
-  //   z-index: -10;
-  //   background-image: url("../../assets/bg_marble.jpg");
-  //   -webkit-background-size: cover;
-  //   -moz-background-size: cover;
-  //   -o-background-size: cover;
-  //   background-size: cover;
-  // }
 
   .kotext {
+    // color: white;
     padding: 3rem 0;
-    background-image: url("../../assets/bg_marble.jpg");
-    background-size: auto 100vh;
-    background-attachment: fixed;
+    // mix-blend-mode: screen;
+    // color: black;
+    // color: transparent;
 
+    
+    // background-color: #106330;
+
+    // padding: 3rem 0;
+    background-image: url("../../assets/bg_marble.jpg");
+    background-size: cover;
+    // background-size: auto 100vh;
+
+    background-attachment: fixed;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 
     font-size: 15vw;
-    // font-weight: bold;
     line-height: 0.69;
     text-align: left;
-    // vertical-align: bottom;
   }
 
 
