@@ -263,7 +263,8 @@ a:hover {
 
 .kotextcontainor {
   text-transform: uppercase;
-  background-color: #106330; }
+  font-size: 16vw;
+  height: 54vw; }
   .kotextcontainor .kotext {
     padding: 3rem 0;
     background-image: url("../../assets/bg_marble.jpg");
